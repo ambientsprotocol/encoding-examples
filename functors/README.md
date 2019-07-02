@@ -6,7 +6,7 @@ This directory contains examples of _functors_ with various strategies for distr
 
 ```javascript
 let identity = (value) => () => ({ value })
-let map_identity = () => (id, func) => identity(func(id().value))
+let map_identity = () => (id, fn) => identity(fn(id().value))
 let string_length = (str) => str.length
 let program = map_identity()(identity("hello"), string_length)
 program()
