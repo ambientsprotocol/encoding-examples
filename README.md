@@ -2,6 +2,8 @@
 
 Examples of computation abstractions using the [Robust Ambient](https://pdfs.semanticscholar.org/c847/a9bb262c87bffcae9b5e2dca5dcf88551ea2.pdf) calculus *(abbrv. ROAM)*.
 
+The encodings in this repository are written in a text format used in [AmbIcobjs](https://www-sop.inria.fr/mimosa/ambicobjs/) tool. The syntax used in the examples makes the encodings easier to read and use in files and programs.
+
 ## Encodings
 
 - [Monoids](https://github.com/ambientsprotocol/roam-examples/blob/master/monoids/README.md)
