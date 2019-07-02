@@ -4,8 +4,8 @@ Examples of computation abstractions using the [Robust Ambient](https://pdfs.sem
 
 ## Encodings
 
-- [Monoids](https://github.com/ambientsprotocol/roam-examples/tree/master/monoids)
-- [Functor](https://github.com/ambientsprotocol/roam-examples/tree/master/functors)
+- [Monoids](https://github.com/ambientsprotocol/roam-examples/blob/master/monoids/README.md)
+- [Functors](https://github.com/ambientsprotocol/roam-examples/blob/master/functors/README.md)
 
 ## Simulating Ambients
 
