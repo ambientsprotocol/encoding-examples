@@ -67,7 +67,7 @@ program[
 open program
 ```
 
-Follow the instructions in [setup](#setup) and once running, wonderful things will start happening and eventually it should result in:
+Follow the instructions in [setup](#setup), copy the example encoding above and paste it into the simulation tool. Once running, wonderful things will start happening and eventually it should result in:
 
 <img width="180" alt="Screen Shot 2019-06-03 at 18 24 32" src="https://user-images.githubusercontent.com/7499694/58813642-e0d13200-862c-11e9-8db6-e81369d4df2c.png">
 
