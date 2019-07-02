@@ -15,7 +15,7 @@ The example Ambients encodings in this repository can be run with the [AmbIcobjs
 
 <img width="200" alt="Example 1" src="example1.gif">
 
-### Setup
+### Setup & Run
 
 1. Download [ambicobj.jar](https://www-sop.inria.fr/mimosa/ambicobjs/ambicobj.jar) from the [AmbIcobjs](https://www-sop.inria.fr/mimosa/ambicobjs/) website
 2. Go to the download directory and run the tool with `java -jar ambicobj.jar`
