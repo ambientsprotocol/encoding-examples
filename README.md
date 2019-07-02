@@ -29,40 +29,21 @@ The example Ambients encodings in this repository can be run with the [AmbIcobjs
 The JavaScript program:
 
 ```js
-let val1 = "hello"
-let val2 = "world"
 let string_concat = () => (left, right) => left + right
-let program = () => {
-   return string_concat()(val1, val2)
-}
+let program = () => string_concat()("hello", "world")
 program()
 ```
 
 Is encoded as:
 
 ```
-val1[
-  in_ call.open call.(
-    string[hello[]|open_]|
-    open return.open_
-  )
-]|
-val2[
-  in_ call.open call.(
-    string[world[]|open_]|
-    open return.open_
-  )
-]|
 string_concat[
   in_ call.open call.(
     func[
-      left[in_ left.open left.open string.in string.in concat]|
-      right[in_ right.open right.open string.in string.in concat]|
+      left[in_ arg.open arg.in string.in concat]|
+      right[in_ arg.open arg.in string.in concat]|
       string[
-        concat[
-          in_ left|
-          in_ right
-        ]|
+        concat[in_ left|in_ right]|
         in_ left|in_ right
       ]|
       open_
@@ -70,31 +51,24 @@ string_concat[
     open return.open_
   )
 ]|
-eval_a[
-  out_ call.in_ val1|
-  out_ call.in_ val2|
+program[
   out_ call.in_ string_concat|
   open func.open_|
 
   call[
-    out eval_a.in val1.open_.return[open_.in eval_a.in func.in left]
+    out program.in string_concat.open_.return[open_.in program.in func]
   ]|
-  call[
-    out eval_a.in val2.open_.return[open_.in eval_a.in func.in right]
-  ]|
-  call[
-    out eval_a.in string_concat.open_.return[open_.in eval_a.in func]
-  ]|
-
   func[in_ string_concat.open string_concat.(
-    left[in_ val1.open val1.in left.open_]|
-    right[in_ val2.open val2.in right.open_]|
-    in_ val1.in_ val2.open func.open_)
+    arg[string[hello[]]|in left.open_]|
+    arg[string[world[]]|in right.open_]|
+    open func.open_)
   ]
 ]|
-open eval_a
+open program
 ```
 
 Follow the instructions in [setup](#setup) and once running, wonderful things will start happening and eventually it should result in:
 
-<img width="200" alt="Screen Shot 2019-06-03 at 18 24 32" src="https://user-images.githubusercontent.com/7499694/58813642-e0d13200-862c-11e9-8db6-e81369d4df2c.png">
+<img width="180" alt="Screen Shot 2019-06-03 at 18 24 32" src="https://user-images.githubusercontent.com/7499694/58813642-e0d13200-862c-11e9-8db6-e81369d4df2c.png">
+
+For more examples, see the list in [Encodings](#encodings).
