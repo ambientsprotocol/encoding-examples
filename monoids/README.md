@@ -50,5 +50,12 @@ open program
 Reduces to a final value:
 
 ```
-string[left[hello[]]|right[world[]]]
+string[
+  left[
+    string[hello[]]
+  ]|
+  right[
+    string[world[]]
+  ]
+]
 ```
