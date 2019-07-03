@@ -46,3 +46,9 @@ program[
 ]|
 open program
 ```
+
+Reduces to a final value:
+
+```
+string[left[hello[]]|right[world[]]]
+```
