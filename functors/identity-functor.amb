@@ -14,7 +14,7 @@ string_length[
 map_identity[
   in_ call.open call.(
     func[
-      id[in_ arg.open arg.in arg.open_]|
+      id[in_ arg.open arg.open identity.in arg.open_]|
       arg[in_ id.open id.in func.in arg.open_]|
       func[in_ func.in_ arg.open func.in identity.open_]|
       identity[
@@ -38,10 +38,9 @@ program[
   ]|
   func[in_ map_identity.open map_identity.(
     arg[
-      string[hello[]]|
+      identity[string[hello[]]|open_]|
       in id.open_]|
     func[
-      arg[in_ arg.open arg.in arg.open_]|
       arg[in_ arg.open arg.in str.open_]|
       in_ string_length.open string_length.in func.open_
     ]|
