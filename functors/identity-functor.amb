@@ -16,7 +16,7 @@ map_identity[
     func[
       id[in_ arg.open arg.open identity.in arg.open_]|
       arg[in_ id.open id.in func.in arg.open_]|
-      func[in_ func.in_ arg.open func.in identity.open_.open func]|
+      func[in_ func.in_ arg.open func.in identity.open func.open_]|
       identity[
         in_ func.open func
       ]|
