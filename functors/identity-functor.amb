@@ -16,9 +16,9 @@ map_identity[
     func[
       id[in_ arg.open arg.open identity.in arg.open_]|
       arg[in_ id.open id.in func.in arg.open_]|
-      func[in_ func.in_ arg.open func.in identity.open_]|
+      func[in_ func.in_ arg.open func.in identity.open_.open func]|
       identity[
-        in_ func.open func.open func
+        in_ func.open func
       ]|
       open_
     ]|
@@ -38,8 +38,11 @@ program[
   ]|
   func[in_ map_identity.open map_identity.(
     arg[
-      identity[string[hello[]]|open_]|
-      in id.open_]|
+      identity[
+        string[hello[]]|open_
+      ]|
+      in id.open_
+    ]|
     func[
       arg[in_ arg.open arg.in str.open_]|
       in_ string_length.open string_length.in func.open_
