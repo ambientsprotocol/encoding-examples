@@ -51,11 +51,13 @@ Reduces to a final value:
 
 ```
 string[
-  left[
-    string[hello[]]
-  ]|
-  right[
-    string[world[]]
+  concat[
+    left[
+      string[hello[]]
+    ]|
+    right[
+      string[world[]]
+    ]
   ]
 ]
 ```
